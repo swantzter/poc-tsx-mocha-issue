@@ -4,7 +4,7 @@
   "author": "Svante Bengtson <svante@swantzter.se>",
   "license": "MIT",
   "scripts": {
-    "test": "npx mocha --import=tsx {a,b}/index.ts"
+    "test": "mocha --import=tsx {a,b}/test.ts"
   },
   "dependencies": {
     "@tsconfig/node20": "^20.1.4",

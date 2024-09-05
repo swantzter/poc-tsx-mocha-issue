@@ -13,3 +13,9 @@ jobs:
       - run: npm ci --prefer-offline
 
       - run: npm t
+      - run: npx mocha --import=tsx {a,b}/test.ts
+        if: always()
+      - run: npx mocha {a,b}/test.ts
+        env:
+          NODE_OPTIONS: --import=tsx
+        if: always()
