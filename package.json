@@ -1,0 +1,14 @@
+{
+  "name": "test-tsx",
+  "version": "1.0.0",
+  "author": "Svante Bengtson <svante@swantzter.se>",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx mocha --import=tsx {a,b}/index.ts"
+  },
+  "dependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "tsx": "^4.19.0",
+    "mocha": "^10.7.3"
+  }
+}
